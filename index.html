@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chandigarh events</title>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css">
+
+   <!--email -->
+ <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+   <!--swiper css-->
+   <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+ />
+  <!--font awresome-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Chandigarh</span>Events</a>
+     
+       <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#service">SERVICES</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="#contact">CONTACT</a>
+        
+         </nav> 
+         <div class="dropdown">
+            <button class="dropbtn">SIGN IN </button>
+            <div class="dropdown-content">
+                <a href="login/user.html">Admin Login</a>
+              
+              
+            </div>
+          </div>
+        
+
+         <div id="menu-bar" class="fas fa-bars"></div>
+    </header>
+
+    <!-- carousel -->
+    
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="image/img1.jpg">
+                <div class="content">
+                    <div class="author">ABHISHEK SHARMA</div>
+                    
+                    <div class="topic"><span>Chandigarh Events</span></div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        The Chandigarh Events website is your ultimate destination for premier event management services, ensuring flawless execution of corporate gatherings, social celebrations, and promotional campaigns. Led by industry expert Abhishek Sharma, our team orchestrates unforgettable experiences tailored to your every need.
+                    </div>
+                    <div class="buttons">
+                        <button><a href="#service" >Get Started</a></button>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img2.jpg">
+                <div class="content">
+                    <div class="author">ABHISHEK SHARMA</div>
+                    
+                    <div class="topic"><span>Chandigarh Events</span></div>
+                    <div class="des">
+                      The Chandigarh Events website is your ultimate destination for premier event management services, ensuring flawless execution of corporate gatherings, social celebrations, and promotional campaigns. Led by industry expert Abhishek Sharma, our team orchestrates unforgettable experiences tailored to your every need.
+                    </div>
+                    <div class="buttons">
+                        
+                        <button><a href="#service" >Get Started</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    <div class="author">ABHISHEK SHARMA</div>
+                    <div class="topic"><span>Chandigarh Events</span></div>
+                    <div class="des">
+                      The Chandigarh Events website is your ultimate destination for premier event management services, ensuring flawless execution of corporate gatherings, social celebrations, and promotional campaigns. Led by industry expert Abhishek Sharma, our team orchestrates unforgettable experiences tailored to your every need.
+                    </div>
+                    <div class="buttons">
+                       
+                        <button><a href="#service" >Get Started</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    <div class="author">ABHISHEK SHARMA</div>
+                    <div class="topic"><span>Chandigarh Events</span></div>
+                    <div class="des">
+                      The Chandigarh Events website is your ultimate destination for premier event management services, ensuring flawless execution of corporate gatherings, social celebrations, and promotional campaigns. Led by industry expert Abhishek Sharma, our team orchestrates unforgettable experiences tailored to your every need.
+                    </div>
+                    <div class="buttons">
+                        
+                        <button><a href="#service" >Get Started</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="image/img1.jpg">
+                <div class="content">
+                    <div class="title">
+                      
+                    </div>
+                    <div class="description">
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img2.jpg">
+                <div class="content">
+                    <div class="title">
+                      
+                    </div>
+                    <div class="description">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    <div class="title">
+                        
+                    </div>
+                    <div class="description">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    <div class="title">
+                        
+                    </div>
+                    <div class="description">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+
+    <section class="service" id="service">
+        <h1 class="heading">SEE WHAT WE <span>OFFER</span></h1>
+        <div class="box-container">
+    <div class="box">
+        <div class="fas fa-envelope"></div>
+            <h3>Wedding/Party events</h3>
+            <p>Our dedicated team ensures seamless management and logistics for your wedding or party, allowing you to enjoy every moment stress-free. Let us handle the details while you focus on creating cherished memories."
+            </p>
+        </div>
+        <div class="box">
+            <div class="fas fa-photo-video"></div>
+                <h3>Vendor Management</h3>
+                <p>I have established strong relationships with trusted vendors, including caterers, decorators, photographers, and entertainers. This enables me to curate a team of professionals who will bring your vision to life.
+                </p>
+            </div>
+            <div class="box">
+                <div class="fas fa-sharp fa-regular fa-gear"></div>
+                    <h3>on-site coordination</h3>
+                    <p>On the day of your event, I will be there to manage every aspect, allowing you to enjoy the occasion stress-free. From setup to teardown, I ensure smooth operations and handle any unforeseen challenges.</p>
+                </div>
+                <div class="box">
+                    <div class="fas fa-map-marker-alt"></div>
+                        <h3>venue selection</h3>
+                        <p>With an extensive network of venues, I assist in finding the perfect location to suit your event's theme and requirements. From elegant ballrooms to unique outdoor settings, I have access to a wide range of options. </p>
+                    </div>
+                    <div class="box">
+                        <div class="fas fa-car"></div>
+                            <h3>Software updations</h3>
+                            <p>We've established strategic collaborations with prestigious vehicle manufacturers such as Jeep, Campas, and Mercedes-Benz to streamline software updates, ensuring cutting-edge performance and functionality across their fleet."</p>
+                        </div>
+                        <div class="box">
+                            <div class="fas fa-light fa-baseball-bat-ball"></div>
+                                <h3>Sports</h3>
+                                <p>Our expertise extends to providing adept manpower for multifaceted roles such as security, hospitality, and beyond, catering to the dynamic requirements of prestigious sporting events like the IPL."</p>
+                            </div>
+            
+    
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <h1 class="heading">LET'S TAKE A LOOK AT OUR <span>RECENT EVENTS</span></h1>
+    <div class="recentevents">
+   
+    <div class="bg">
+        
+      </div>
+      <div class="nft">
+        <a href="recent.html">
+        <div class='main'>
+          <img class='tokenImage' src="image/zomato.png" alt="NFT" />
+          <h2>zomato</h2>
+          <p class='description'>zomato project, needed volunteers for taking orders on holi . </p>
+          <div class='tokenInfo'>
+           
+            <div class="duration">
+              <ins>◷</ins>
+              <p>15 days left</p>
+            </div>
+          </div>
+          <hr />
+          <div class='creator'>
+            <div class='wrapper'>
+              <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" alt="Creator" />
+            </div>
+           
+          </div>
+        </div>
+      </a>
+      </div>
+
+      
+    <div class="bg">
+        
+    </div>
+    <div class="nft">
+      <a href="recent.html">
+      <div class='main'>
+        <img class='tokenImage' src="image/unacdemy.jfif" alt="NFT" />
+        <h2>Unacademy</h2>
+        <p class='description'>unacdemy hired staff for promotion on daily basis</p>
+        <div class='tokenInfo'>
+          
+          <div class="duration">
+            <ins>◷</ins>
+            <p>11 days left</p>
+          </div>
+        </div>
+        <hr />
+        <div class='creator'>
+          <div class='wrapper'>
+            <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" alt="Creator" />
+          </div>
+         
+        </div>
+      </div></a>
+    </div>
+
+    
+    <div class="bg">
+        
+    </div>
+    <div class="nft">
+      <a href="recent.html">
+      <div class='main'>
+        <img class='tokenImage' src="image/home2.jpg" alt="NFT" />
+        <h2>IPL ticket collection</h2>
+        <p class='description'>ticket collection at tata ipl matches at mulunpur stadium </p>
+        <div class='tokenInfo'>
+         
+          <div class="duration">
+            <ins>◷</ins>
+            <p>11 days left</p>
+          </div>
+        </div>
+        <hr />
+        <div class='creator'>
+          <div class='wrapper'>
+            <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" alt="Creator" />
+          </div>
+         
+        </div>
+      </div></a>
+    </div>
+
+    
+    <div class="bg">
+        
+    </div>
+    <div class="nft">
+      <a href="recent.html">
+      <div class='main'>
+        <img class='tokenImage' src="image/PIC21.jfif" alt="NFT" />
+        <h2>Exam duty</h2>
+        <p class='description'>government authorised checking for security purpose in exams and frisking.</p>
+        <div class='tokenInfo'>
+         
+          <div class="duration">
+            <ins>◷</ins>
+            <p>11 days left</p>
+          </div>
+        </div>
+        <hr />
+        <div class='creator'>
+          <div class='wrapper'>
+            <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" alt="Creator" />
+          </div>
+         
+        </div>
+      </div></a>
+    </div>
+
+    
+    <div class="bg">
+        
+    </div>
+    <div class="nft">
+      <a href="recent.html">
+      <div class='main'>
+        <img class='tokenImage' src="image/jeep.webp" alt="NFT" />
+        <h2>Jeep campus</h2>
+        <p class='description'>for software updation for next genterations recording sessions were done.</p>
+        <div class='tokenInfo'>
+         
+          <div class="duration">
+            <ins>◷</ins>
+            <p>11 days left</p>
+          </div></a>
+        </div>
+        <hr />
+        <div class='creator'>
+          <div class='wrapper'>
+            <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" alt="Creator" />
+          </div>
+         
+        </div>
+      </div>
+    </div>
+</div>
+<h1 class="heading">Here are our <span>Upcoming Events</span></h1>
+<section class="recent" id="recent">
+  <div id="upcomingEvents"></div>
+  
+</section> 
+
+    <section class="about" id="about">
+        <h1 class="heading">KNOW MORE <span>ABOUT US</span></h1>
+        <div class="row">
+            <div class="image">
+                <img src="image/effective-business-team-office-group-work-vector-34356039-removebg-preview.png" alt="">
+            </div>
+            <div class="content">
+                
+                <p>Welcome to the world of exceptional event management services, led by the visionary guidance of Abhishek Sharma. Our company is also registered by the name KK Consultancy, we pride ourselves on curating unforgettable experiences across a diverse spectrum of events, ensuring each moment is imbued with magic and meticulous attention to detail. From corporate galas to intimate social soirées, our team orchestrates every element flawlessly, guaranteeing an unforgettable occasion. Our expertise extends to dynamic promotional campaigns, boasting collaborations with industry titans such as Byju's, Apple, Mercedes-Benz, Unacademy, and more. Additionally, we are fervently committed to community well-being, actively participating in initiatives like blood donation drives and government exam duties. Registered under the banner of KK Consultancy, our company stands as a testament to professionalism, creativity, and unwavering dedication. Contact us today and let Abhishek and his team transform your event dreams into reality.</p>
+                <a href="#contact" class="btn">reach us</a>
+            </div>
+        </div>
+    </section>
+    <section class="review" id="review">
+        <h1 class="heading">MEET OUR <span>TEAM MEMBERS</span></h1>
+    
+        <div class="swiper-container review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="image/a.jpg" alt="">
+                        <div class="user-info">
+                            <h3>ABHISHEK SHARMA</h3>
+                            <span>TEAM MANAGER/DIRECTOR</span>
+                        </div>
+                    </div>
+                    <p>Event manager with over three years of experience in the field,worked with esteemed companies like BYJUS,Apple,Mercedes,IPL,etc.Also worked as a Team leader(TLs)and Business Development Executives (BDEs).</p>
+                </div>
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="image/adibhai.jfif" alt="">
+                        <div class="user-info">
+                            <h3>ADITYA SHARMA</h3>
+                            <span>TEAM MANAGER/DIRECTOR</span>
+                        </div>
+                    </div>
+                    <p>Event manager with over five years of experience in the field,worked with esteemed companies and i supervise all the events, payments, and team coordinators for better performances. I coordinate with companies and sponsors.</p>
+                </div>
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="image/IMG-20220804-WA0086.jpg" alt="">
+                        <div class="user-info">
+                            <h3>TARUNA</h3>
+                            <span>EVENT COORDINATOR</span>
+                        </div>
+                    </div>
+                    <p>I Coordinate with team members and guide them about the events and required information regarding the event. if there is any issues or queries I am there to help my chandigarh event family members.<br>  </p>
+                </div>
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="image/Snapchat-284801397.jpg" alt="">
+                        <div class="user-info">
+                            <h3>TANYA</h3>
+                            <span>ASSISTENT TEAM MANAGER</span>
+                        </div>
+                    </div>
+                    <p>I Manage the team by collecting all the essentials details and information of the volunteers and appointing them according to thier skills and requiremenet for the event.I manage all the crucial data of all the events.</p>
+                </div>
+               
+               
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="heading">contact <span>us</span></h1>
+    
+        <form action="#">
+            <div class="inputBox">
+                <input type="text" placeholder="name" />
+            </div>
+            <div class="inputBox">
+              <input type="email" placeholder="email@gmail.com" />
+          </div>
+            <div class="inputBox">
+                <input type="text" placeholder="subject" />
+            </div>
+            <div class="inputBox">
+              <textarea id="Message" cols="30" rows="10" placeholder="message"></textarea> 
+          </div>
+            <div class="inputBox">
+              <button onclick="sendMessage()";>Send Message</button>
+          </div>
+        </form>
+         
+    </section>
+
+    
+    
+    <div class="faq-container">
+        <h1 class="heading">FREQUENTLY <span>ASKED QUESTIONS</span></h1>
+        <div class="faq">
+          <div class="question">
+            <h2 class="question-title">What is event management?</h2>
+            <button class="toggle-answer">+</button>
+          </div>
+          <div class="answer">
+            <p>Event management involves planning, organizing, and executing various types of events, such as conferences, weddings, festivals, and corporate gatherings. It includes tasks like budgeting, scheduling, venue selection, marketing, and coordinating logistics to ensure the event's success.</p>
+          </div>
+        </div>
+    
+        <div class="faq">
+          <div class="question">
+            <h2 class="question-title">What skills are important for event management?</h2>
+            <button class="toggle-answer">+</button>
+          </div>
+          <div class="answer">
+            <p>Important skills for event management include excellent organizational abilities, strong communication and interpersonal skills, attention to detail, creativity, problem-solving capabilities, time management, and the ability to work well under pressure.</p>
+          </div>
+        </div>
+    
+        <div class="faq">
+          <div class="question">
+            <h2 class="question-title">How do you plan an event?</h2>
+            <button class="toggle-answer">+</button>
+          </div>
+          <div class="answer">
+            <p>Planning an event involves several steps, including defining the event's purpose and objectives, setting a budget, creating a guest list, choosing a date and venue, arranging for catering and entertainment, marketing the event, coordinating logistics, and ensuring all necessary permits and licenses are obtained.</p>
+          </div>
+        </div>
+    
+        <div class="faq">
+          <div class="question">
+            <h2 class="question-title">What is the role of an event coordinator?</h2>
+            <button class="toggle-answer">+</button>
+          </div>
+          <div class="answer">
+            <p>An event coordinator is responsible for overseeing all aspects of event planning and execution. This includes coordinating with vendors, managing budgets, communicating with clients, creating event timelines, resolving any issues that arise during the event, and ensuring that everything runs smoothly from start to finish.</p>
+          </div>
+        </div>
+    
+        <div class="faq">
+          <div class="question">
+            <h2 class="question-title">How do you market an event?</h2>
+            <button class="toggle-answer">+</button>
+          </div>
+          <div class="answer">
+            <p>Event marketing can involve various strategies, including social media promotion, email marketing, creating a website or landing page for the event, distributing flyers or posters, partnering with influencers or sponsors, and leveraging traditional advertising channels such as print or radio.</p>
+          </div>
+        </div>
+    
+        <div class="faq">
+          <div class="question">
+            <h2 class="question-title">What are some common challenges in event management?</h2>
+            <button class="toggle-answer">+</button>
+          </div>
+          <div class="answer">
+            <p>Common challenges in event management include budget constraints, last-minute changes or cancellations, inclement weather, technical issues with equipment or facilities, managing large crowds, ensuring guest satisfaction, and dealing with unexpected emergencies.</p>
+          </div>
+        </div>
+    
+        <div class="faq">
+          <div class="question">
+            <h2 class="question-title">On what basis is selection done for the event?</h2>
+            <button class="toggle-answer">+</button>
+          </div>
+          <div class="answer">
+            <p>The selection is done on first-come-first-serve basis. As there is no partiality every volunteer is given equal right for the seletion , in case of inadequate data or any other issues according to the requirement the cchanges can be done.</p>
+          </div>
+        </div>
+    
+        <div class="faq">
+          <div class="question">
+            <h2 class="question-title">How can you enroll for the events?</h2>
+            <button class="toggle-answer">+</button>
+          </div>
+          <div class="answer">
+            <p>You just simply need to login as a user and the come to recent events section and if you want to enroll just click on the enroll button and register your self.</p>
+          </div>
+        </div>
+      </div>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3><span>Chandigarh</span>Events</h3>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>chandigarh</a>
+                <p>This website is your ultimate destination for premier event management services,ensuring flawless execution of corporate gatherings,social celebrations,and promotional campaigns.</p>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+        <a href="index.html"><i class="fas fa-arrow-right"></i> HOME</a>
+        <a href="#about"><i class="fas fa-arrow-right"></i> ABOUT</a>
+        <a href="#service"><i class="fas fa-arrow-right"></i> SERVICES</a>
+        <a href="portfolio.html"><i class="fas fa-arrow-right"></i> PORTFOLIO</a>
+        <a href="gallery.html"><i class="fas fa-arrow-right"></i> GALLERY</a>
+        <a href="#contact"><i class="fas fa-arrow-right"></i> CONTACT</a>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+                <a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+                <a href="#"><i class="fas fa-envelope"></i>chandigarhevents07@gmail.com</a>
+                <a href="#"><i class="fas fa-envelope"></i>abhirockstar129@gmail.com</a>
+                
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+     <a href="#"><i class="fa-brands fa-facebook"></i>facebook</a>
+     
+     <a href="#"><i class="fa-brands fa-telegram"></i>telegram</a>
+     <a href="#"><i class="fa-brands fa-instagram"></i>instagram</a>
+     <a href="#"><i class="fa-brands fa-linkedin"></i>linkedin</a>
+            </div>
+        </div>
+        <div class="credit">
+            created by <span>chandigarhevents</span> | all rights reserved
+        </div>
+    </section>
+    
+   
+    <div class="theme-toggler">
+        <div class="toggle-btn">
+            <i class="fas fa-cog"></i>
+        </div>
+        <h3>choose color</h3>
+        <div class="buttons">
+            <div class="theme-btn" style="background: #ccff33"></div>
+            <div class="theme-btn" style="background: #d35400"></div>
+            <div class="theme-btn" style="background: #f39c12"></div>
+            <div class="theme-btn" style="background: #1abc9c"></div>
+            <div class="theme-btn" style="background: #3498db"></div>
+            <div class="theme-btn" style="background: #9b59b6"></div>
+        </div>
+    </div>
+    <!--siper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+    
+    <!--script file --> 
+    <script src="app.js"></script>
+</body>
+</html>

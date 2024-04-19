@@ -1,0 +1,806 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --theme-color: #3867d6;
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+body{
+    margin: 0;
+    background: #000000 ;
+    color: #eee;
+    font-family: Poppins;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+}
+
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+   
+    background-color: #1b1818;
+    margin: auto;
+    height: 50px;
+    z-index:1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:3.5rem 9%;
+}
+
+
+.header .logo{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 3rem; 
+    
+}
+
+.header .logo span{
+    color: var(--theme-color);
+}
+
+.header .navbar a{
+    font-size: 1.9rem;
+    color:#fff;
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover{
+    color: var(--theme-color);
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  /* Style the dropdown button */
+  .dropdown .dropbtn {
+    font-size: 19px;  
+    border: none;
+    outline: none;
+    color: #f2f2f2;
+   
+    background-color: inherit;
+    margin: 0;
+  }
+
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    font-size: 18px;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+  }
+
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+#menu-bar{
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.home .content{
+    text-align: center;
+    padding-top: 6rem;
+    margin:2rem auto;
+    max-width: 70rem;
+}
+
+.home .content h3{
+    color: #fff;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+}
+.home .content h3 span{
+    color: var(--theme-color);
+}
+
+.btn{
+    margin-top:1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;;
+    border-radius: 0.5rem;
+    background: #424890;
+    color:#fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background: var(--theme-color);
+}
+
+.home .home-slider .swiper-slide{
+overflow: hidden;
+border-radius: 0.5rem;
+height:50rem;
+width:35rem;
+}
+
+.home .home-slider .swiper-slide img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.heading{
+    text-align:center;
+    color: #fff;
+    padding-bottom:2rem ;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.heading span{
+color: var(--theme-color);
+text-transform: uppercase;
+}
+
+.service .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap:1.5rem;
+}
+
+.service .box-container .box {
+    border-radius: 0.5rem;
+    background-color:#323233; 
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.service .box-container .box div{
+    height:6rem;
+    width:6rem;
+    line-height:6rem;
+    border-radius:50%;
+    font-size:2.5rem;
+    background:var(--theme-color);
+    color: #fff;
+}
+
+.service .box-container .box h3{
+    font-size: 2rem;
+    color:#fff;
+    padding: 1rem 0;
+}
+
+.service .box-container .box p{
+    font-size: 1.4rem;
+    color:#eee;
+    line-height: 1.8;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.about .row .image{
+flex:1 1 45rem;
+padding: 1rem;
+}
+
+.about .row .image img{
+width: 100%;
+border-radius: 0.5rem;
+border: 1rem solid #323233;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3{
+    font-size: 3.5rem;
+    color:#fff; 
+}
+
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.review .box {
+    border-radius: 2rem;
+    background: #323233 ;
+    padding: 2rem;
+    position: relative;
+}
+
+.review .box .fa-quote-right{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: var(--theme-color);
+    font-size:5rem;
+}
+
+.review .box .user{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom:1rem ;
+}
+
+.review .box .user img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .box .user h3{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.review .box .user span{
+    font-size: 1.5rem;
+    color: #eee;
+}
+
+.review .box p{
+    line-height: 2;
+    color: #eee;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.contact form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .inputBox input,
+textarea {
+    width: 100%;
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0.7rem 0;
+    font-size: 1.5rem;
+    color: black;
+    text-transform: none;
+}
+
+.contact form .inputBox input::placeholder,
+textarea::placeholder{
+    color:rgb(55, 49, 49);
+    text-transform: capitalize;
+}
+
+.contact form .inputBox input:focus,
+textarea:focus{
+    background: rgb(185, 172, 172);
+}
+
+.contact form .inputBox input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.footer{
+    background: #323233 ;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem , 1fr));
+    gap:1.5rem;
+}
+
+.footer .box-container .box h3{
+font-size: 2.5rem;
+padding: 1rem 0;
+color: #fff;
+}
+
+.footer .box-container .box span{
+    font-size: 2.5rem;
+    color: var(--theme-color);
+}
+
+.footer .box-container .box p{
+    font-size: 1.4rem;
+    color:#eee;
+    line-height: 1.8;  
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color:#eee;
+}
+.footer .box-container .box a i{
+    padding-right: 0.5rem;
+    color: var(--theme-color);
+}
+
+.footer .box-container .box a:hover i{
+    padding-right:1.5rem ;
+color: #fff;
+}
+
+.footer .credit{
+    text-align: center;
+    border-top: 0.1rem solid #323233;
+    color: #fff;
+    padding: 2rem;
+    padding-top: 2.5rem;
+    font-size: 1.5rem;
+}
+
+.footer .credit span{
+    color: var(--theme-color);
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background:#323233;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--theme-color);
+    border-radius: 5rem;
+}
+
+.theme-toggler{
+    position: fixed;
+    top: 10rem;
+    right: -20rem;
+    background: #3867d6;
+    z-index: 1000;
+    width:20rem;
+    text-align: center;
+}
+
+.theme-toggler.active{
+    right:0;
+}
+.theme-toggler h3{
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.theme-toggler .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.theme-toggler .buttons .theme-btn{
+    height:5rem;
+    width: 5rem;
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+.theme-toggler .toggle-btn{
+    position: absolute;
+    top: 0;
+    left: -5.9rem;
+    padding: 1.3rem 1.5rem;
+    background: #3867d6;
+    cursor: pointer;
+}
+
+.theme-toggler .toggle-btn i{
+    color: #fff;
+    font-size: 3rem;
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:991px){
+ html{
+    font-size: 55%;
+ }
+
+ .header{
+    padding: 1.5rem 2rem;
+ }
+
+ .section{
+    padding: 2rem;
+ }
+}
+
+@media (max-width:768px){
+    #menubar{
+    display: initial;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: 0.1rem solid #2e3267;
+        background: #1f2641;
+        clip-path: polygon(0 0 , 100% 0, 0 0);
+    }
+
+    .header .navbar a{
+        display: flex;
+        background: #2e3267;
+        border-radius: 0.5rem;
+        padding: 1.3rem;
+        margin: 1.3rem;
+        font-size: 2rem;
+
+    }
+}
+
+
+
+
+
+
+
+@keyframes showContent{
+    to{
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+.carousel .list .item:nth-child(1) .content .title{
+    animation-delay: 1.2s!important;
+}
+.carousel .list .item:nth-child(1) .content .topic{
+    animation-delay: 1.4s!important;
+}
+.carousel .list .item:nth-child(1) .content .des{
+    animation-delay: 1.6s!important;
+}
+.carousel .list .item:nth-child(1) .content .buttons{
+    animation-delay: 1.8s!important;
+}
+/* create animation when next click */
+.carousel.next .list .item:nth-child(1) img{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 30px;
+    animation: showImage .5s linear 1 forwards;
+}
+@keyframes showImage{
+    to{
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+.carousel.next .thumbnail .item:nth-last-child(1){
+    overflow: hidden;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+.carousel.prev .list .item img{
+    z-index: 100;
+}
+@keyframes showThumbnail{
+    from{
+        width: 0;
+        opacity: 0;
+    }
+}
+.carousel.next .thumbnail{
+    animation: effectNext .5s linear 1 forwards;
+}
+
+@keyframes effectNext{
+    from{
+        transform: translateX(150px);
+    }
+}
+
+/* running time */
+
+.carousel .time{
+    position: absolute;
+    z-index: 1000;
+    width: 0%;
+    height: 3px;
+    
+    left: 0;
+    top: 0;
+}
+
+.carousel.next .time,
+.carousel.prev .time{
+    animation: runningTime 3s linear 1 forwards;
+}
+@keyframes runningTime{
+    from{ width: 100%}
+    to{width: 0}
+}
+
+
+/* prev click */
+
+.carousel.prev .list .item:nth-child(2){
+    z-index: 2;
+}
+
+.carousel.prev .list .item:nth-child(2) img{
+    animation: outFrame 0.5s linear 1 forwards;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+@keyframes outFrame{
+    to{
+        width: 150px;
+        height: 220px;
+        bottom: 50px;
+        left: 50%;
+        border-radius: 20px;
+    }
+}
+
+.carousel.prev .thumbnail .item:nth-child(1){
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+.carousel.next .arrows button,
+.carousel.prev .arrows button{
+    pointer-events: none;
+}
+.carousel.prev .list .item:nth-child(2) .content .author,
+.carousel.prev .list .item:nth-child(2) .content .title,
+.carousel.prev .list .item:nth-child(2) .content .topic,
+.carousel.prev .list .item:nth-child(2) .content .des,
+.carousel.prev .list .item:nth-child(2) .content .buttons
+{
+    animation: contentOut 1.5s linear 1 forwards!important;
+}
+
+@keyframes contentOut{
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 678px) {
+    .carousel .list .item .content{
+        padding-right: 0;
+    }
+    .carousel .list .item .content .title{
+        font-size: 30px;
+    }
+}
+
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin:100px auto;
+}
+
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown{
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.container:nth-child(0){
+    animation-delay: 0s;
+}
+.container:nth-child(2){
+    animation-delay: 1s;
+}
+.container:nth-child(3){
+    animation-delay: 2s;
+}
+.container:nth-child(4){
+    animation-delay: 3s;
+}
+.container:nth-child(5){
+    animation-delay: 4s;
+}
+.container:nth-child(6){
+    animation-delay: 5s;
+}
+.container:nth-child(7){
+    animation-delay: 6s;
+}
+.container:nth-child(8){
+    animation-delay: 7s;
+}
+.container:nth-child(9){
+    animation-delay: 8s;
+}
+.container:nth-child(10){
+    animation-delay: 9s;
+}
+
+
+
+.text-box{
+    padding: 20px 30px;
+    background:#eee;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #000000;
+}
+
+.left-container{
+    left:0;
+}
+
+.right-container{
+    left: 50%;
+}
+
+.container img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top:32px;
+    z-index:10;
+
+    
+}
+
+.right-container img{
+    left:-20px;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height:100%;
+    background: white;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+@keyframes moveline {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+.text-box h2{
+    font-weight: 600;
+}
+
+.text-box small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent ;
+    border-left: 15px solid white;
+    right: -15px;
+
+}
+
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent ;
+    border-right: 15px solid white;
+    left: -15px;
+
+}
+
+
+
